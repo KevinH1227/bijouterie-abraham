@@ -43,8 +43,8 @@
       <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
       <div class="innerLayout">
          <header class="row" id="header2">
-            <div class="container">
-               <div class="row">
+            <div class="container" style="display: flex; justify-content: space-around;">
+               <%# <div class="row">
                   <div class="col-sm-12 col-md-5 menu2 pull-right">
                      <ul class="nav fright">
                         <li><a href="#">My Account</a></li>
@@ -53,11 +53,11 @@
                         <li><a data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm"><i class="fas fa-search"></i></a></li>
                         <li><a href="cart.html"><span class="badge">2</span></a></li>
                      </ul>
-                  </div>
+                  </div> %>
                   <div class="col-sm-12 col-md-2 logo text-center pull-right">
-                     <a href="index.html"><img src="<%= asset_path("Regalia-logo-2.png") %>"></a>
+                     <a href="#"><img src="<%= asset_path("Regalia-logo-2.png") %>"></a>
                   </div>
-                  <div class="col-sm-12 col-md-5 menu ">
+                  <%# <div class="col-sm-12 col-md-5 menu ">
                      <nav class="navbar navbar-default navbar-static-top m0">
                         <div class="row m0">
                            <!-- Brand and toggle get grouped for better mobile display -->
@@ -70,23 +70,23 @@
                            <div class="collapse navbar-collapse" id="mainNav2">
                               <ul class="nav navbar-nav">
                                  <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Home</a>
+                                    <a href="#m-about" aria-expanded="false">About Us</a>
                                     <ul class="dropdown-menu" role="menu">
-                                       <li class="active"><a href="index.html">Home Default</a></li>
-                                       <li ><a href="index2.html">Home 2 - Menu 2</a></li>
-                                       <li><a href="index3.html">Home 3 - Menu 3</a></li>
+                                       <%# <li class="active"><a href="">About Us</a></li> %>
+                                       <%# <li ><a href="index2.html">Home 2 - Menu 2</a></li>
+                                       <li><a href="index3.html">Home 3 - Menu 3</a></li> >
                                     </ul>
                                  </li>
                                  <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Pages</a>
-                                    <ul class="dropdown-menu" role="menu">
+                                    <a href="#m-types" aria-expanded="false">Products</a>
+                                    <%# <ul class="dropdown-menu" role="menu">
                                        <li><a href="about.html">About</a></li>
                                        <li><a href="shortcodes.html">Shortcodes</a></li>
                                        <li><a href="innerpage-dark.html">Inner Page Dark</a></li>
                                        <li><a href="blog.html">Blog</a></li>
                                        <li><a href="single-post.html">Single Post</a></li>
                                        <li><a href="404.html">404</a></li>
-                                    </ul>
+                                    </ul> >
                                  </li>
                                  <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Product Category</a>
@@ -118,7 +118,7 @@
                         <i class="fas fa-search"></i>
                         </span>
                      </div>
-                  </form>
+                  </form> %>
                </div>
             </div>
          </header>
@@ -155,7 +155,7 @@
                      <!--Text Lines-->
                   </li>
                   
-                   <li>
+                  <li>
                      <img src="<%= asset_path("slider/slider-2-3.jpg") %>">
                      <div class="text_lines row m0">
                         <div class="container p0 text-right">
@@ -184,7 +184,7 @@
                         <img src="<%= asset_path("ring.png") %>" class="img-responsive">
                      </div>
                   </div>
-                  <div   class="col-md-6 col-lg-7   ring_cont">
+                  <div class="col-md-6 col-lg-7   ring_cont" id="m-about">
                      <h3>ABOUT US</h3>
                      <p>Bijouterie Abraham is an independent family owned jewelley store with over 30 years' experience and expertise in the beautiful world of jewellery. We are passionate about offering the highest quality of service and our wealth of knowledge guarantees you and your precious jewellery will be exceptionally cared for.  </p>
                      <p>
@@ -199,13 +199,12 @@
             </div>
          </section>
          <section id="shopRings">
-            <div class="sectionTitle">
-               <h3>New arrival</h3>
+            <div class="sectionTitle" id="m-types">
+               <h3>Diamond Types</h3>
                <!-- <h5>know more about our latest collection</h5> -->
             </div>
             <div class="d-carousel-cener owl-carousel">
                <div class="dc-inner">
-                  <a href="single-product.html">
                      <img src="<%= asset_path("carousel/1.png") %>">
                      <div class="dc-containt">
                         <h2>Cushion</h2>
@@ -214,7 +213,6 @@
                   </a>
                </div>
                <div class="dc-inner">
-                  <a href="single-product.html">
                      <img src="<%= asset_path("carousel/2.png") %>">
                      <div class="dc-containt">
                         <h2>Round</h2>
@@ -223,16 +221,14 @@
                   </a>
                </div>
                <div class="dc-inner">
-                  <a href="single-product.html">
                      <img src="<%= asset_path("carousel/3.png") %>">
                      <div class="dc-containt">
-                        <h2>Pear</h2>
+                        <h2>Round Brilliant</h2>
                         <%# <p>Bar Set Anniversary Ring</p> %>
                      </div>
                   </a>
                </div>
                <div class="dc-inner">
-                  <a href="single-product.html">
                      <img src="<%= asset_path("carousel/4.png") %>">
                      <div class="dc-containt">
                         <h2>Radiant</h2>
@@ -241,10 +237,9 @@
                   </a>
                </div>
                <div class="dc-inner">
-                  <a href="single-product.html">
                      <img src="<%= asset_path("carousel/5.png") %>">
                      <div class="dc-containt">
-                        <h2>Ovel</h2>
+                        <h2>Oval</h2>
                         <%# <p>Bar Set Anniversary Ring</p> %>
                      </div>
                   </a>
@@ -256,8 +251,8 @@
             <div id="trigger" class="spacer s1"></div>
             <div class="spacer s0"></div>
             <div id="pin" class="box1 red">
-                <p>Unpinned.</p>
-                <a href="#" class="viewsource">view source</a>
+               <p>Unpinned.</p>
+               <a href="#" class="viewsource">view source</a>
             </div>
             <div class="spacer s2"></div>
             
