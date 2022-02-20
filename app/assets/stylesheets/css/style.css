@@ -7062,6 +7062,7 @@ body.home-2 footer .copyRight {
     background-color: #f7f7f7
 }
 #back-to-top {
+    margin-bottom: 50px;
     position: fixed;
     bottom: 40px;
     right: 40px;
