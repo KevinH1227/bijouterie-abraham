@@ -638,9 +638,6 @@
             <div class="line1">
                <div class="container">
                <div class="row footFeatures">
-                 
-
-
                   <div class="col-sm-4 footFeature">
                      <div class="media m0">
                         <div class="media-left icon" style="fill: white;"><img src="<%= asset_path("icons/tel.png") %>"></div>
@@ -712,8 +709,7 @@
                         </ul>
                      </div>
                   </div> %>
-                  
-                  <div class="col-sm-3 widget">
+                  <%# <div class="col-sm-3 widget">
                      <div class="row m0">
                         <h4>subscribe to our latest news</h4>
                         <form action="subscriptionList.php" method="post" role="form">
@@ -721,11 +717,10 @@
                               <span class="input-group-addon"><i class="fas fa-envelope"></i></span>
                               <input type="email" class="form-control" id="subscribeEmail" name="subscribeEmail" placeholder="EMAIL ADDRESS">
                               <button class="btn btn-default" type="submit"><i class="fas fa-paper-plane"></i></button>
-                           </div>
-                           
+                           </div>      
                         </form>
-                     </div>
-
+                     </div> %>
+                        <%= render "customers/index" %>
                   </div>
                </div>
             </div>
