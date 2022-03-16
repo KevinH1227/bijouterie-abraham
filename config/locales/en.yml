@@ -1,33 +1,9 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  title: "2022 NEW COLLECTION"
+  desc1_html: "Diamond's <br>  for special <br> occasions"
+  desc2_html: "Special <br> wedding <br> collections"
+  desc3_html: "Original<br> custom <br> design"
+  about_us: "ABOUT US"
+  about_us1: "Bijouterie Abraham is an independent family owned jewelery store with over 40 years' experience and expertise in the beautiful world of jewelery. We are passionate about offering the highest quality of service and our wealth of knowledge guarantees you and your precious jewelery will be exceptionally cared for."
+  about_us2: "We specialize in the finest quality jewelery repairs, remodelling and custom designs, and offer a one-on-one, personalized design service with quality workmanship and attention to detail. Experience a seamless and educational journey to creating the perfect engagement ring by remaining involved in the process from start to finish. Our gemstone collection includes an exclusive range of loose diamonds and any other precious gems available from all around the world. If you have something out of the ordinary in mind, we can source this for you."
+  about_us3: "Come is store to see all that we offer!"
