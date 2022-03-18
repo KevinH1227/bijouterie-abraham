@@ -190,14 +190,14 @@
          </section>
          <section id="shopRings">
             <div class="sectionTitle" id="m-types">
-               <h3>Setting Types</h3>
+               <h3><%= t 'setting_types' %></h3>
                <!-- <h5>know more about our latest collection</h5> -->
             </div>
             <div class="d-carousel-cener owl-carousel">
                <div class="dc-inner">
                      <img src="<%= asset_path("carousel/1.png") %>">
                      <div class="dc-containt">
-                        <h2>Shared Bar setting</h2>
+                        <h2><%= t 'bar' %></h2>
                         <%# <p>Bar Set Anniversary Ring</p> %>
                      </div>
                   </a>
@@ -205,7 +205,7 @@
                <div class="dc-inner">
                      <img src="<%= asset_path("carousel/2.png") %>">
                      <div class="dc-containt">
-                        <h2>Bezel setting</h2>
+                        <h2><%= t 'bezel' %></h2>
                         <%# <p>Bar Set Anniversary Ring</p> %>
                      </div>
                   </a>
@@ -213,7 +213,7 @@
                <div class="dc-inner">
                      <img src="<%= asset_path("carousel/3.png") %>">
                      <div class="dc-containt">
-                        <h2>Round Brilliant with Halo setting</h2>
+                        <h2><%= t 'round_brilliant' %></h2>
                         <%# <p>Bar Set Anniversary Ring</p> %>
                      </div>
                   </a>
@@ -221,7 +221,7 @@
                <div class="dc-inner">
                      <img src="<%= asset_path("carousel/4.png") %>">
                      <div class="dc-containt">
-                        <h2>Radiant Round with Pears</h2>
+                        <h2><%= t 'radiant' %></h2>
                         <%# <p>Bar Set Anniversary Ring</p> %>
                      </div>
                   </a>
@@ -229,7 +229,7 @@
                <div class="dc-inner">
                      <img src="<%= asset_path("carousel/5.png") %>">
                      <div class="dc-containt">
-                        <h2>Round with Baguettes</h2>
+                        <h2><%= t 'round' %></h2>
                         <%# <p>Bar Set Anniversary Ring</p> %>
                      </div>
                   </a>
@@ -253,7 +253,7 @@
                   <%# <a class="fullgridBox_inner" href="product.html"> %>
                      <img src="<%= asset_path("gridImage/1.jpg") %>"> 
                      <div class="fullgridBox_cont  ">
-                        <h3>Luxurious and <br>elegant rings</h3>
+                        <h3><%= t 'luxurious_html'%></h3>
                         <%# <p>SHOP NOW</p> %>
                      </div>
 
@@ -263,7 +263,7 @@
                   <%# <a class="fullgridBox_inner" href="product.html"> %>
                      <img src="<%= asset_path("gridImage/2.jpg") %>"> 
                      <div class="fullgridBox_cont fgb_btm fgb_center">
-                        <h3>Come in store <br> to see more</h3>
+                        <h3><%= t 'store_html' %></h3>
                      </div>
                   </a>
                </li>
@@ -271,7 +271,7 @@
                   <%# <a class="fullgridBox_inner" href="product.html"> %>
                      <img src="<%= asset_path("gridImage/3.jpg") %>"> 
                      <div class="fullgridBox_cont">
-                        <h3>Necklace <br>collection</h3>
+                        <h3><%= t 'necklace_html' %></h3>
                         <%# <p>SHOP NOW</p> %>
                      </div>
 
@@ -290,7 +290,7 @@
                   <%# <a class="fullgridBox_inner" href="product.html"> %>
                      <img src="<%= asset_path("gridImage/5.jpg") %>"> 
                      <div class="fullgridBox_cont fgb_right ">
-                        <h3>Earring <br>collection</h3>
+                        <h3><%= t 'earring_html' %></h3>
                         <%# <p>SHOP NOW</p> %>
                      </div>
 
@@ -300,7 +300,7 @@
                   <%# <a class="fullgridBox_inner" href="product.html"> %>
                      <img src="<%= asset_path("gridImage/6.jpg") %>"> 
                      <div class="fullgridBox_cont fgb_right fgb_top ">
-                          <h3>New arrival <br> jewelery design</h3>
+                          <h3><%= t 'arrival_html' %></h3>
                         <%# <p>SHOP NOW</p> %>
                      </div>
 
@@ -516,7 +516,7 @@
          <section id="homeBlog" class="pt-0">
          <div class="container blog_j">
             <div class="row sectionTitle">
-               <h3>Our Services</h3>
+               <h3><%= t 'services' %></h3>
                <!-- <h5>we satisfied more than 700 customers</h5> -->
             </div>
             <div class="row m0">
@@ -529,7 +529,7 @@
                      <div class="blog_j_text">
                         <div class="blog_j_text_inner">
                            <h3><span></span> Bijouterie Abraham</h3>
-                           <p>Here at Bijouterie Abraham we offer a multitude of serivces and brands.</p>
+                           <p><%= t 'service_desc' %></p>
                            
 
                            <div class="btn_readmore">
@@ -551,8 +551,8 @@
                            </div>
                            <div class="blog_j_text">
                               <div class="blog_j_text_inner">
-                           <h3>Jewelery Repair</h3>
-                           <p>We repair a lot of jewelry here; in fact, it's the majority of what we've built this business on. We've seen tens of thousands of pieces over the years and have learned a thing or two along the way</p>
+                           <h3><%= t 'repair' %></h3>
+                           <p><%= t 'repair_desc' %></p>
                            
 
                            <div class="btn_readmore">
@@ -569,8 +569,8 @@
                            </div>
                            <div class="blog_j_text">
                               <div class="blog_j_text_inner">
-                           <h3>Watch repair and battery replacement</h3>
-                           <p>Watch not working properly? Stop by and we'll do a diagnostic to see what the issue is. We also polish and clean watches.</p>
+                           <h3><%= t 'watch_repair' %></h3>
+                           <p><%= t 'watch_repair_desc' %></p>
                            
 
                            <div class="btn_readmore">
@@ -589,8 +589,8 @@
                            </div>
                            <div class="blog_j_text">
                               <div class="blog_j_text_inner">
-                           <h3>Precious gems and diamonds</h3>
-                           <p>We have an assortment of precious gems and a variety of diamonds to fit your budget. From emerald to ruby, we have it all.</p>
+                           <h3><%= t 'precious_gems' %></h3>
+                           <p><%= t 'precious_gems_desc' %></p>
                            
 
                            <div class="btn_readmore">
@@ -607,8 +607,8 @@
                            </div>
                            <div class="blog_j_text">
                               <div class="blog_j_text_inner">
-                           <h3>Custom jewelry, design & creation</h3>
-                           <p>Have a specific design in mind? We can make it happen! Gold, silver, diamonds or another precious stone, we'll walk you through the entire process.</p>
+                           <h3><%= t 'custom' %></h3>
+                           <p><%= t 'custom_desc' %></p>
                            
 
                            <div class="btn_readmore">
@@ -633,7 +633,7 @@
                      <div class="media m0">
                         <div class="media-left icon" style="fill: white;"><img src="<%= asset_path("icons/tel.png") %>"></div>
                         <div class="media-body texts">
-                           <h4>Call Us</h4>
+                           <h4><%= t 'call_us' %></h4>
                            <h2>514 223 6296</h2>
                         </div>
                      </div>
@@ -642,8 +642,8 @@
                      <div class="media m0">
                         <div class="media-left icon"><img src="<%= asset_path("icons/shopping-bag2.png") %>"></div>
                         <div class="media-body texts">
-                           <h4>come see our</h4>
-                           <h2>latest offers</h2>
+                           <h4><%= t 'come' %></h4>
+                           <h2><%= t 'latest' %></h2>
                         </div>
                      </div>
                   </div>
@@ -651,8 +651,8 @@
                      <div class="media">
                         <div class="media-left icon"><img src="<%= asset_path("icons/assort.png") %>"></div>
                         <div class="media-body texts">
-                           <h4>Inspiring Assortment</h4>
-                           <h2>For Every Occasion</h2>
+                           <h4><%= t 'inspiring' %></h4>
+                           <h2><%= t 'occasion' %></h2>
                         </div>
                      </div>
                   </div>
@@ -663,8 +663,8 @@
                <div class="row m0" style="display: flex; justify-content: space-between;">
                   <div class="col-sm-3 widget">
                      <div class="row m0">
-                        <h4>About Bijouterie Abraham</h4>
-                        <p>We provide the best Quality of products. We are always here to help our customers.</p>
+                        <h4><%= t 'about' %></h4>
+                        <p><%= t 'about_desc' %></p>
                         <ul class="list-inline">
                            <li><a href="https://www.facebook.com/Bijouterie-Abraham-111049911491852" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                            <li><a href="https://twitter.com/AbrahamJewelery" target="_blank"><i class="fab fa-twitter"></i></a></li>
@@ -719,9 +719,9 @@
          <div class="row m0 copyRight">
             <div class="container">
                <div class="row m0">
-                  <div class="fleft">&copy; 2022 Bijouterie Abraham All Rights Reserved.</div>
+                  <div class="fleft"><%= t 'reserved' %></div>
                   <ul class="nav nav-pills fright">
-                  <div class="fleft">&copy; 2022 Powered by <a href="http://www.margevity.com/" target="_blank" rel= "nofollow">Margevity</a></div>
+                  <div class="fleft"><%= t 'power' %> <a href="http://www.margevity.com/" target="_blank" rel= "nofollow">Margevity</a></div>
                      <%# <li><a href="index.html">Home</a></li>
                      <li><a href="about.html">about</a></li>
                      <li><a href="blog.html">blog</a></li>
