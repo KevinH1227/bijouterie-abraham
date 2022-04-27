@@ -42,7 +42,7 @@
       <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
       <div class="innerLayout">
          <header class="row" id="header2">
-            <div class="container" style="display: flex; justify-content: space-around;">
+            <div class="container" style="display: flex; justify-content: center;">
                <%# <div class="row">
                   <div class="col-sm-12 col-md-5 menu2 pull-right">
                      <ul class="nav fright">
@@ -53,7 +53,7 @@
                         <li><a href="cart.html"><span class="badge">2</span></a></li>
                      </ul>
                   </div> %>
-                  <div class="col-sm-12 col-md-2 logo text-center pull-right">
+                  <div class="col-sm-12 col-md-2 logo text-center pull-right" style="position: relative;">
                      <a><img src="<%= asset_path("bijouterie-logo.png") %>"></a>
                   </div>
                   <%# <div class="col-sm-12 col-md-5 menu ">
@@ -87,15 +87,24 @@
                                        <li><a href="404.html">404</a></li>
                                     </ul>
                                  </li> %>
-                                 <div>
-                                  <li class="dropdown">
+                                 <%# <div>
+                                    <li class="dropdown" style="list-style-type: none;">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">LN</a>
                                     <ul class="dropdown-menu" role="menu">
-                                       <li class="nav-item"><a class="nav-link" ><%= link_to image_tag("icons8-great-britain-48.png"), root_path(locale: :en) %></a></li>
-                                       <li class="nav-item"><a class="nav-link" ><%= link_to image_tag("icons8-france-48.png"), root_path(locale: :fr) %></a></li>
+                                       <li class="nav-item"><a class="nav-link" ><%= link_to image_tag("icons8-great-britain-48.png"), root_path(locale: :en) ></a></li>
+                                       <li class="nav-item"><a class="nav-link" ><%= link_to image_tag("icons8-france-48.png"), root_path(locale: :fr) ></a></li>
                                     </ul>
-                                  </li>
-                                 </div>
+                                    </li>
+                                 </div> %>
+                                 <%# <div class="dropdown" style="list-style-type: none;">
+                                    <button class="dropbtn">LN
+                                       <i class="fa fa-caret-down"></i>
+                                    </button> %>
+                                    <div class="dropdown-content" style=" display: flex; position: absolute; list-style-type: none; top: 0; right: 0; padding-right: 15px; padding-top: 20px;">
+                                       <li class="nav-item" style="padding-left: 10px; padding-right:10px;"><a class="nav-link" ><%= link_to image_tag("icons8-great-britain-48.png", height: 20), root_path(locale: :en) %></a></li>
+                                       <li class="nav-item" ><a class="nav-link" ><%= link_to image_tag("icons8-france-48.png", height: 20), root_path(locale: :fr) %></a></li>
+                                    </div>
+                                 <%# </div> %>
                                     <%# </ul>
                                  </li>
                                  <li><a href="contact.html">contact us</a></li>
