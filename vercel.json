@@ -1,0 +1,13 @@
+{
+  "rewrites": [
+    { "source": "/customers/index", "destination": "/customers/index" },
+    { "source": "/:locale/customers/index", "destination": "/customers/index" },
+    { "source": "/:locale", "destination": "/pages/home" },
+    { "source": "/:locale/*", "destination": "/pages/home" },
+    { "source": "/customers", "destination": "/customers" },
+    { "source": "/:locale/customers", "destination": "/customers" },
+    { "source": "/customers/*", "destination": "/customers" }
+  ]
+}
+
+
